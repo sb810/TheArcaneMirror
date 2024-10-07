@@ -54,3 +54,12 @@
 .austie {
   font-family: 'Austie Bost Roman Holiday Sketch', serif;
 }
+
+@font-face {
+  font-family: 'EFCO Brookshire Regular';
+  src: url('../EFCO Brookshire Regular.ttf');
+}
+
+.brookshire {
+  font-family: 'EFCO Brookshire Regular', serif;
+}
