@@ -132,3 +132,13 @@ The flip card container - set the width and height to whatever you want. We have
   top:0;
   transition:opacity 0.5s ease;
 }
+
+.flip-card-back>a.stretched-link>img {
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 0.25s ease;
+}
+
+.flip-card-back>a.stretched-link:hover>img{
+  opacity:100%;
+}

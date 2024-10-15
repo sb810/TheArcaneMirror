@@ -1,7 +1,7 @@
 .page-spinner-wrapper {
   position:fixed;
   background-color:#1a1a1a;
-  transition:all 0.25s;
+  transition:all 0.5s;
   width:100vw;
   height:100vh;
   z-index:100000;
