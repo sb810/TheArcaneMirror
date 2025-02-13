@@ -9,6 +9,7 @@ The flip card container - set the width and height to whatever you want. We have
   transition: all 0.25s ease;
   aspect-ratio: 13/19;
   filter:drop-shadow(0 0 30px black);
+  max-height: 80vh;
 }
 
 .flip-card .rounded {
@@ -36,9 +37,11 @@ The flip card container - set the width and height to whatever you want. We have
 }
 
 .flip-card.flipped {
+  aspect-ratio: 13/19;
   transition: all 0.5s ease;
   z-index:15000;
-  height: 80vh;
+  max-height: 80vh;
+  max-width: 80vw;
   width:auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -60,6 +63,7 @@ The flip card container - set the width and height to whatever you want. We have
 
 .flip-card.flipped.opened .flip-card-back:hover {
   box-shadow: 0 0 30px white;
+  outline: 3px solid white;
 }
 
 .flip-card.flipped.opened .flip-card-front {
@@ -76,11 +80,11 @@ The flip card container - set the width and height to whatever you want. We have
     z-index:100000;
   }
   50% {
-    transform:translatex(-55%) translatey(-10px) rotatez(-1deg);
+    transform:translatex(-55%) translatey(-10px) rotatez(-0.5deg);
     z-index:100000;
   }
   100% {
-    transform:translatex(-45%) translatey(-10px) rotatez(-2deg);
+    transform:translatex(-2%) translatey(-10px) rotatez(-1deg);
     z-index:-100000;
   }
 }
@@ -92,11 +96,11 @@ The flip card container - set the width and height to whatever you want. We have
   }
   50% {
     z-index:-100000;
-    transform:translatex(55%) translatey(10px) rotatez(1deg);
+    transform:translatex(55%) translatey(10px) rotatez(0.5deg);
   }
   100% {
     z-index:100000;
-    transform:translatex(45%) translatey(10px) rotatez(2deg);
+    transform:translatex(2%) translatey(10px) rotatez(1deg);
   }
 }
 
@@ -141,4 +145,69 @@ The flip card container - set the width and height to whatever you want. We have
 
 .flip-card-back>a.stretched-link:hover>img{
   opacity:100%;
+}
+
+@media (min-width: 576px) {
+  @keyframes card-open-front {
+    0% {
+      transform: translatex(0) translatey(0) rotatez(0);
+      z-index:100000;
+    }
+    50% {
+      transform:translatex(-55%) translatey(-10px) rotatez(-1deg);
+      z-index:100000;
+    }
+    100% {
+      transform:translatex(-20%) translatey(-10px) rotatez(-2deg);
+      z-index:-100000;
+    }
+  }
+
+  @keyframes card-open-back {
+    0% {
+      z-index:-100000;
+      transform: translatex(0) translatey(0) rotatez(0);
+    }
+    50% {
+      z-index:-100000;
+      transform:translatex(55%) translatey(10px) rotatez(1deg);
+    }
+    100% {
+      z-index:100000;
+      transform:translatex(20%) translatey(10px) rotatez(2deg);
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  @keyframes card-open-front {
+    0% {
+      transform: translatex(0) translatey(0) rotatez(0);
+      z-index:100000;
+    }
+    50% {
+      transform:translatex(-55%) translatey(-10px) rotatez(-1deg);
+      z-index:100000;
+    }
+    100% {
+      transform:translatex(-45%) translatey(-10px) rotatez(-2deg);
+      z-index:-100000;
+    }
+  }
+
+  @keyframes card-open-back {
+    0% {
+      z-index:-100000;
+      transform: translatex(0) translatey(0) rotatez(0);
+    }
+    50% {
+      z-index:-100000;
+      transform:translatex(55%) translatey(10px) rotatez(1deg);
+    }
+    100% {
+      z-index:100000;
+      transform:translatex(45%) translatey(10px) rotatez(2deg);
+    }
+  }
 }
