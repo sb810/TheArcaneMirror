@@ -42,7 +42,8 @@ The flip card container - set the width and height to whatever you want. We have
   z-index:15000;
   max-height: 80vh;
   max-width: 80vw;
-  width:auto;
+  width: calc(80vh * (13 / 19));
+  height: calc(80vw * (19 / 13));
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
