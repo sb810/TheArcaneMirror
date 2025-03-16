@@ -2,7 +2,8 @@ const url = 'https://freeipapi.com/api/json'; // Get current request's IP info
 let city = localStorage.getItem('cityName'); // Retrieve city from local storage
 let bannerDismissed = sessionStorage.getItem('bannerDismissed');
 
-createBanner()
+// No events happening right now!
+// createBanner()
 
 function createBanner() {
   if(bannerDismissed)
