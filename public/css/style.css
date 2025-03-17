@@ -7,6 +7,20 @@
   z-index:100000;
 }
 
+.accordion-item {
+  border:1px solid #5d197c;
+}
+
+.accordion-item.bg-dark {
+  background-color: rgba(0,0,0,0.5) !important;
+  text-shadow:0 0 10px black, 0 0 20px black, 0 0 40px black;
+}
+
+.accordion-body {
+  box-shadow:0 0 20px black inset;
+  backdrop-filter: blur(10px);
+}
+
 .bg-dark {
   background-color: #000 !important;
 }
