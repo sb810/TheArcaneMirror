@@ -25,6 +25,32 @@
   background-color: #000 !important;
 }
 
+.bg-pick-a-card {
+  background-size:cover;
+  background-position-x:25%;
+}
+
+@media (min-width: 992px) {
+  .bg-pick-a-card {
+    background-size:120%;
+    background-position-y:80%;
+    background-position-x: left;
+  }
+}
+
+.btn-outline-light:hover {
+  text-shadow:none;
+}
+
+.link-light {
+  color: rgba(255, 255, 255, .55);
+  transition:color 0.2s
+}
+
+.link-light:hover, .link-light:focus, .link-light:active {
+  color: rgba(255, 255, 255, .75);
+}
+
 .bg-dark .accordion-header .accordion-button {
   background-color:#000;
   color:#fff;

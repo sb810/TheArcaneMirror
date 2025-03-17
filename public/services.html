@@ -66,12 +66,26 @@
   </nav>
 
 <div class="lightbox-back" style="opacity:0; pointer-events: none;"></div>
-	<div class="container-fluid" style="background-image:url('img/bg/bg-space.jpg'); background-size:cover; box-shadow: 0 0 30px black inset; padding:75px 0">
-      <div class="container text-center text-white" style="text-shadow: 0 0 10px black, 0 0 30px black, 0 0 50px black">
-			<p>Welcome to The Arcane Mirror, where the ancient art of tarot reading meets modern insight.</p><p>Our services are designed to guide you through life’s mysteries and challenges, offering clarity and wisdom at every turn. </p><p>Each category of tarot cards represents a unique aspect of our offerings, tailored to meet your specific needs. </p><p>Whether you’re seeking answers about love, career, or personal growth, our readings are here to illuminate your path. </p><p>Explore our services below, and discover the guidance that awaits you.</p>
+  <div class="container-fluid bg-pick-a-card" style="margin-top:66.5px; overflow:hidden; background-repeat:no-repeat; box-shadow: 0 0 20px black inset; background-image: url('img/bg/bg-pick-a-card.jpeg');">
+    <div class="container" style="height:740px">
+        <div class="row align-middle text-center text-md-start mt-5">
+          <h1 class="display-1 p-5 p-md-0 mb-3" style="color:white; text-shadow:0 0 10px black, 0 0 25px black, 0 0 50px black !important"><span class="brookshire">Pick a Card</span></h1>
+          <p class="w-100 text-white lead" style="text-shadow:0 0 10px black, 0 0 15px black, 0 0 20px black !important">
+            "Any card!" - It's not a magic trick, we promise.
+          </p>
+          <p class="w-100 text-white" style="text-shadow:0 0 10px black, 0 0 15px black, 0 0 20px black !important">
+            Explore our services below, and <nobr>discover the guidance that awaits you.</nobr>
+          </p>
+          <div class="mt-5 mt-md-3 btn-group-vertical mx-auto mx-md-2 p-0" style="width:auto; backdrop-filter:blur(20px);" >
+            <a class="btn btn-outline-light btn-lg" href="#featured-readings">Featured readings</a>
+            <a class="btn btn-outline-light btn-lg" href="#general-readings">General readings</a>
+            <a class="btn btn-outline-light btn-lg " href="#specialized-insight">Specialized insight</a>
+            <a class="btn btn-outline-light btn-lg" href="#love-health">Love & Health</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-image:url('img/bg/table.jpg'); background-size:cover;">
+    <div class="container-fluid" id="featured-readings" style="scroll-margin-top: 66.5px;">
       <div class="container">
         <h1 class="py-3 text-white brookshire" style="text-shadow: 0 0 10px black, 0 0 10px black; margin:0">
           Featured Readings
@@ -82,7 +96,7 @@
     style="background-image:url('img/bg/bg5y.jpg'); background-size:cover; box-shadow: 0 0 30px black inset">
       <div class="container" style="max-width:900px;">
         <div class="row py-5">
-          <div class="col-4">
+          <div data-name="The Ace of Cards" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
@@ -96,28 +110,28 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Three of Cards" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/2.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/2.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/LEJ57BHHXZXYGP3K4DEPKHXC" class="stretched-link">
+                  <a href="https://square.link/u/eCQmhbvX" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Five of Cards" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/3.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/3.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/OYC6QL6KKNMUJAS4USBDRZUM" class="stretched-link">
+                  <a href="https://square.link/u/ya7lXKUn" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
@@ -127,7 +141,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-image:url('img/bg/table.jpg'); background-size:cover;">
+    <div class="container-fluid" id="general-readings" style="scroll-margin-top: 66.5px;">
       <div class="container">
         <h1 class="py-3 text-white brookshire" style="text-shadow: 0 0 10px black, 0 0 10px black; margin:0">
           General Readings
@@ -137,42 +151,42 @@
     <div class="container-fluid" style="background-image:url('img/bg/bg5b.jpg'); background-size:cover; box-shadow: 0 0 30px black inset">
       <div class="container" style="max-width:900px;">
         <div class="row py-5">
-          <div class="col-4">
+          <div data-name="The Celtic Cross" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/4.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/4.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/LARFJRC5QA47AZ6L4XHBJ7QY" class="stretched-link">
+                  <a href="https://square.link/u/p21qyF3L" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Seven of Days" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/5.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/5.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/T3CYDTXIY3H6VDKCQWEGIUCJ" class="stretched-link">
+                  <a href="https://square.link/u/OtrhGUis" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Thirty of Days" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/6.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/6.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/PNORHRQ6YWSSZC37J4U3TQVI" class="stretched-link">
+                  <a href="https://square.link/u/hYSk23bg" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
@@ -182,7 +196,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-image:url('img/bg/table.jpg'); background-size:cover;">
+    <div class="container-fluid" id="specialized-insight" style="scroll-margin-top: 66.5px;">
       <div class="container">
         <h1 class="py-3 text-white brookshire" style="text-shadow: 0 0 10px black, 0 0 10px black; margin:0">
           Specialized Insight
@@ -193,42 +207,42 @@
     style="background-image:url('img/bg/bg5g.jpg'); background-size:cover; box-shadow: 0 0 30px black inset">
       <div class="container" style="max-width:900px;">
         <div class="row py-5">
-          <div class="col-4">
+          <div data-name="The Moon" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/7.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/7.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/MIQU5CDYVBYSZHOWBNQC3UKC" class="stretched-link">
+                  <a href="https://square.link/u/PKCKnvtv" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Wheel" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/8.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/8.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/BNQIDTXUOFEGUPIOO2RS5ZSV" class="stretched-link">
+                  <a href="https://square.link/u/OsqL5Ktd" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Past" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded p-0">
                   <img class="img-fluid rounded" src="img/c/9.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded" style="background-image:url('img/cb/9.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/TQXKKZ4WMN5VTOBBM47PAUOM" class="stretched-link">
+                  <a href="https://square.link/u/Usl8WovD" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
@@ -238,7 +252,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-image:url('img/bg/table.jpg'); background-size:cover;">
+    <div class="container-fluid" id="love-health" style="scroll-margin-top: 66.5px;">
       <div class="container">
         <h1 class="py-3 text-white brookshire" style="text-shadow: 0 0 10px black, 0 0 10px black; margin:0">
           Love & Health
@@ -248,42 +262,42 @@
     <div class="container-fluid" style="background-image:url('img/bg/bg5p.jpg'); background-size:cover; box-shadow: 0 0 30px black inset">
       <div class="container" style="max-width:900px;">
         <div class="row py-5">
-          <div class="col-4">
+          <div data-name="The Spirit" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/10.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/11.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/DCQ2I6AVNCWFHXT752HUBAFQ" class="stretched-link">
+                  <a href="https://square.link/u/HUtwktqC" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Ace of Hearts" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/11.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/12.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/3JVKFXOHYGG6AVJOPAN2QGJY" class="stretched-link">
+                  <a href="https://square.link/u/3paEhu3m" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div data-name="The Oracle" class="col-4">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front rounded">
                   <img class="img-fluid rounded" src="img/c/12.jpg" alt="Product Image" />
                 </div>
                 <div class="flip-card-back rounded p-0" style="background-image:url('img/cb/13.jpg')">
-                  <a href="https://book.squareup.com/appointments/ce3a25yqi9fjxx/location/LT1VY87HQ7QXN/services/IMOTNFIQH6EPOYIA7UYFU66P" class="stretched-link">
+                  <a href="https://square.link/u/2CoXR6g9" class="stretched-link">
                     <img alt="book now!" src="img/cb/14.png" style="width:100%; height:100%;"/>
                   </a>
                 </div>
